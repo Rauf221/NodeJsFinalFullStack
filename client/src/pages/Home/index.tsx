@@ -32,7 +32,7 @@ export default function Home () {
              <PopularCategories/>
            </div>
            <div className="Section_4 container h-[600px] mx-auto">
-              <TrendyCollectionSlider/>
+              <FeaturedProducts/>
            </div>
            <div className=" h-[150px] mt-20 mb-10 mx-auto">
              <StoreFinder/>
