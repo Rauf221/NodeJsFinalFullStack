@@ -14,10 +14,10 @@ export default function LoginModal({ isOpen, toggleModal }: Props) {
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
-    email: "",  // Track email for register
+    email: "",  
   });
 
-  const [isRegisterMode, setIsRegisterMode] = useState(false);  // Track if in register mode
+  const [isRegisterMode, setIsRegisterMode] = useState(false);  
   const { loading, error, dispatch } = useContext(AuthContext);
   const router = useRouter();
 
@@ -66,7 +66,7 @@ export default function LoginModal({ isOpen, toggleModal }: Props) {
 
   const registerSuccessHandler = (data: any) => {
     alert("Registration successful!");
-    setIsRegisterMode(false);  // Switch back to login mode
+    setIsRegisterMode(false);  
     setCredentials({ username: "", password: "", email: "" });
     toggleModal();
   };
@@ -84,7 +84,7 @@ export default function LoginModal({ isOpen, toggleModal }: Props) {
   };
 
   const toggleRegisterMode = () => {
-    setIsRegisterMode(!isRegisterMode); // Switch between login and register modes
+    setIsRegisterMode(!isRegisterMode); 
   };
 
   return (
